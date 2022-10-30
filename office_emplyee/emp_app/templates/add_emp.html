@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+</head>
+<body>
+<div>
+    <h1>Add New Employee</h1>
+    <hr>
+    <form action="" method="post">
+        {% csrf_token %}
+    <label for="first name">First Name</label><br>
+    <input type="text" id="first name" name="fname" value="{{ f_name }}"><br>
+      <label for="last name">Last Name</label><br>
+    <input type="text" class="Last Namr" id="Last name" name="lname" value="{{ l_name }}" ><br>
+
+      <label for="salary">Salary</label><br>
+    <input type="text" class="form-control" id="salary" name="salary" value="{{ salary }}"><br>
+
+      <label for="address">Address</label><br>
+    <input type="text" class="form-control" id="address" name="address" value="{{ address }}"><br>
+
+      <label for="city_name">City Nmae</label><br>
+    <input type="text" class="form-control" id="city_name" name="city_name" value="{{ city_name }}" ><br>
+      <hr>
+      <button type="submit" class="btn btn-primary">Submit</button><br>
+
+
+
+
+
+</form>
+</div>
+
+</body>
+</html>
